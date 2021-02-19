@@ -1,0 +1,27 @@
+{
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "ecmaFeatures": {
+      "globalReturn": false
+    },
+    "babelOptions": {
+      "configFile": "path/to/config.js"
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ]
+  }
+}
