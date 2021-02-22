@@ -1,0 +1,7 @@
+.git
+.vscode
+.idea
+.helm
+node_modules
+npm-debug
+.cache

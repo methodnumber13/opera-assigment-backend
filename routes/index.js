@@ -39,7 +39,6 @@ router.get('*', async (req, res) => {
     return res.status(400).json({ message: 'incorrect value type' });
   }
   path = decToHex(parseInt(path));
-  console.log(path);
 
   try {
     data = await getBlock(path);
